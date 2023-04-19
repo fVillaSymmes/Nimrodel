@@ -1,0 +1,279 @@
+<!-- Ojo -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="icon" type="image/x-icon" href="./assets/img/n.png">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <title>Pub Restaurant Nimrodel</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/n.png" alt="Logo Restaurante" width="auto" height="40">
+      </a>
+      <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-light text-nowrap" aria-current="page" href="#">Nuestros Productos</a>
+          </li>
+          <li class="nav-item dropdown-item">
+            <a class="nav-link text-secondary text-nowrap" href="#" onclick="mostrar4()">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item dropdown-item">
+            <a class="nav-link text-secondary text-nowrap" id="comuniquemonos" href="#">Comuniquémonos</a>
+          </li>
+          <li class="nav-item dropdown-item">
+            <a class="nav-link text-secondary text-nowrap" id="reservas" href="#">Reservas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <p class="fs-1 text-center text-secondary text-nowrap mt-4">
+      Nimrodel Pub Restaurant
+    </p>
+    <p class="destacadosDeLaSemana text-center fs-2 text text-nowrap">
+      <span class="border-top border-black border-3">Destacados de la semana</span>
+    </p>
+  </header>
+
+  <main>
+
+    <div class=" row">
+      <div id="modal-card4" class="col-6 card position-fixed"
+        style="display: none; text-align: center; margin: -5% 25% -5% 25%;">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner text-bg-dark">
+            <div class="carousel-item active">
+              <h5 class="pt-3">Nimrodel Pub Restaurant</h5>
+              <p class="text-center">
+                “Nimrodel Significa “dama de la cueva blanca”. Fue una elfa silvana que vivió
+                durante la Tercera Edad del Sol en el bosque de Lothlórien. En honor a su nombre, se acuña
+                Nimrodel al río que nace en las Montañas Nubladas”. 
+              </p>
+              <img src="./assets/img/IMG2.jpg" class="mb-5" alt="...">
+            </div>
+            <div class="carousel-item">
+              <p class= "my-5 text-center">
+                “Nimrodel Pub Restaurant es un oasis de calma y diversión, lleno de rincones acogedores
+                en donde se resalta la belleza de su decoración élfica.
+                Es un lugar ideal para visitar solo o acompañado, disfrutar una tarde con amigos, terminar
+                el día después del trabajo o almorzar con tu familia.
+                Puedes probar nuestras tradicionales tablas, en todas sus variedades y que nos han
+                otorgado reconocimiento dentro de la cultura gastronómica.
+                También puedes disfrutar nuestras cervezas de fabricación propia, con sabores que te
+                llevarán a un mágico mundo.”
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/IMG1.jpg" class="img-fluid w-50" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+          </div>
+        </div>
+
+    
+    <div class=" row">
+      <div id="modal-card1" class="col-6 card position-fixed"
+        style="display: none; text-align: center; margin: -5% 25% -5% 25%;">
+        <div class="card-body">
+          <h5 class="card-title">GASEOSAS</h5>
+          <p class="card-text">This is a wider card with supporting text below as a
+            natural lead-in toadditional content. This content is a little bit longer.</p>
+          <div class="card mt-5 mb-5"><img src="./assets/img/bebidas.jpg" class="card-img-top" alt="bebidas.jpg">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" row">
+        <div id="modal-card2" class="col-6 card position-fixed"
+          style="display: none; text-align: center; margin: -5% 25% -5% 25%;">
+          <div class="card-body">
+            <h5 class="card-title">Tablas</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <img src="./assets/img/tablas.jpg" class="card-img-top img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+
+        <div class=" row">
+          <div id="modal-card3" class="col-6 card position-fixed"
+            style="display: none; text-align: center; margin: -5% 25% -5% 25%;">
+            <h5 class="card-title">Schops</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            <img src="./assets/img/shop.jpeg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+            </div>
+          </div>
+
+    <div class="card-group gap-4 mb-4 text-center ms-5 me-5 d-lg-inline-flex d-sm-block mx-auto">
+      <div class="tarjeta card w-20" onclick="mostrar1()">
+        <img src="assets/img/bebidas.jpg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Gaseosas</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+      <div class="tarjeta card w-20" onclick="mostrar2()">
+        <img src="./assets/img/tablas.jpg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tablas</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div class="tarjeta card w-20" onclick="mostrar3()">
+        <img src="./assets/img/shop.jpeg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Schops</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <section class="form d-flex mb-3 d-none d-lg-block justify-content-center align-items-center text-center p-5"
+        id="formComuniquemonos">
+        <form class="bg-secondary">
+          <h3 class="fs-5">Comuniquémonos</h3>
+          <label for="nombre">Nombre</label>
+          <input required id="nombre1" class="infoComuniquemonos" name="nombre" type="text" placeholder="John Doe">
+          <br>
+          <br>
+          <label for="correoElectronico">Correo</label>
+          <input required id="correoElectronico1" class="infoComuniquemonos" name="correo electronico" type="email"
+            placeholder="johndoe@gmail.com">
+          <br>
+          <br>
+          <label for="telefono">Teléfono</label>
+          <input required id="telefono1" class="infoComuniquemonos" name="telefono" type="tel"
+            placeholder="+56 987654321">
+          <br>
+          <br>
+          <label for="motivo">Motivo</label>
+          <select required name="motivo" id="motivo">
+            <option value="felicitaciones">Felicitaciones</option>
+            <option value="consultas">Consultas</option>
+            <option value="reclamos">Reclamos</option>
+            <option value="sugerencias">Sugerencias</option>
+          </select>
+          <br>
+          <br>
+          <textarea required name="cuadro de texto" class="infoComuniquemonos"
+            placeholder="Ingrese su texto."></textarea>
+          <br>
+          <br>
+          <button id="botonComuniquemonos">Enviar</button>
+        </form>
+      </section>
+
+
+        <section class="form d-none d-lg-block mb-4 justify-content-center align-items-center text-center p-5 "
+          id="formReservas">
+          <form class="bg-secondary">
+            <h3 class="fs-3">Reserva</h3>
+            <form class="-none d-lg-block">
+              <label for="nombre">Nombre</label>
+              <input required id="nombre2" class="infoReservas" name="nombre" type="text" placeholder="John Doe">
+              <br>
+              <br>
+              <label for="correoElectronico">Correo</label>
+              <input required id="correoElectronico2" class="infoReservas" name="correo electronico" type="email"
+                placeholder="johndoe@gmail.com">
+              <br>
+              <br>
+              <label for="telefono">Teléfono</label>
+              <input required id="telefono2" class="infoReservas" name="telefono" type="tel"
+                placeholder="+56 987654321">
+              <br>
+              <br>
+              <label for="fecha">Fecha</label>
+              <input required id="fecha" class="infoReservas" name="fecha" type="date">
+              <br>
+              <br>
+              <label for="hora">Hora</label>
+              <input required id="hora" class="infoReservas" name="hora" type="time">
+              <br>
+              <br>
+              <label for="cantidadAsistentes">Cantidad de asistentes</label>
+              <input required id="cantidadAsistentes" class="infoReservas" name="cantidad de asistentes" type="number"
+                min="1">
+              <br>
+              <br>
+              <button id="botonReservar">Reservar</button>
+
+            </form>
+          </form>
+        </section>
+      </div>
+  </main>
+
+  <footer class="z-n1 position-relative">
+    <div id="carouselExample" class="carousel slide ">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/vino.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/chorillana.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/mojito.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="footerBackground bg-image d-flex justify-content-center align-items-center">
+      <p class="text-white">Todos los derechos reservados <i class="fa-regular fa-registered"></i></p>
+    </div>
+  </footer>
+
+  <script src="./assets/JS/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+</html>

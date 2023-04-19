@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    background-image: url(../img/fondo.jpg);
+    background-size: 26rem;
+}
+
+.footerBackground {
+    background-image: url(../img/fondo.jpg);    
+    height: 50vh;
+}
+
+.card {
+    position: static;
+}
+
+footer {
+    position: static;
+}
+
+.img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
