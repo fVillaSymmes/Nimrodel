@@ -68,3 +68,6 @@ function ocultar() {
     this.style.display = "none"
 }
 
+function ocultarModal4() {
+    modalCard4.style.display = "none"
+}
